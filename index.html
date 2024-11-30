@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefit Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div class="modal">
+          <div class="modal__content">
+            <div class="icon">
+                <i class="fa-solid fa-xmark"></i> <br>
+            </div>
+            <p>
+                Numbers are not allowed in the item name!
+            </p>
+          </div>
+        </div> 
+        <h1>
+            Benefit Calculator
+        </h1>
+        <form>
+            <label for="item">Item which you bought :</label>
+            <input type="text" name="item" class="item" placeholder="Item" required>
+            <label for="bought__price">Bought Price</label>
+            <input type="number" min="0" class="bought-item__price" name="bought__price" placeholder="Bought item price">
+            <label for="selling price">Selling Price</label>
+            <input type="number" min="0" name="selling__price" class="selling-item" placeholder="Selling price">
+            <div class="hint">
+                <h2 class="text">
+                    Click button to see profits 
+                </h2>
+                <i class="fa-regular fa-hand-point-down"></i>
+            </div>
+            <div class="btns">
+                <a class="benefit-btn">
+                    Click Button    
+                  </a>
+                  <a href="#" class="reset__btn">
+                      Reset 
+                  </a>
+            </div>
+            <div class="profit__text"></div>
+        </form>
+        
+    </main>
+
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/af6a38c87b.js" crossorigin="anonymous"></script>
+</body>
+</html>
